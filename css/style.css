@@ -1,9 +1,5 @@
 body {
-	background: url(images/background.svg) repeat;
-	font-family: 'Oswald', sans-serif;
-	text-shadow: 1px 1px 1px #aaa;
-	font-style: bold;
-	font-size: 22px;
+	background: url(/../images/background.svg) repeat;
 }
 
 .combination {
@@ -13,6 +9,10 @@ body {
 	text-align: center;
 }
 .wraper {
+	font-family: 'Oswald', sans-serif;
+	text-shadow: 1px 1px 1px #aaa;
+	font-style: bold;
+	font-size: 22px;
 }
 .row>div {
 	display: inline-block;
