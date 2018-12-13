@@ -72,12 +72,14 @@
 	<div id="flop" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 	  <div class="modal-dialog modal-sm" role="document">
 	    <div class="modal-content">
-	    	<img src="images/petrosyan.gif">
+	    	<img id="petrosyan" src="images/petrosyan.gif">
 	    </div>
 	  </div>
 	</div>
 </body>
 <script type="text/javascript">
+	var audio = new Audio();
+	var timer;
 	const switchRu = () => {
 		$('.ru').show();
 		$('.en').hide();
@@ -100,10 +102,19 @@
 	    return a1.length == a2.length && a1.every((v,i)=>v === a2[i])
 	}
 	const soundClick = () => {
-	  var audio = new Audio(); // Создаём новый элемент Audio
-	  audio.src = '22.mp3'; // Указываем путь к звуку "клика"
-	  audio.autoplay = true; // Автоматически запускаем
+	  // var audio = new Audio();
+	  audio.src = '22.mp3';
+	  $('#flop').modal('show');
+	  audio.play();
+	  timer = setTimeout(function(){
+	  	$('#flop').modal('hide');
+	  }, 16000);
 	}
+
+	$('#flop').on('hide.bs.modal', function () {
+	  audio.pause();
+	  clearTimeout(timer);
+	})
 
 	var language = "both";
 	var flop = [];
@@ -113,9 +124,6 @@
 			flop.push(keyCode);
 			if (compare(flop.slice(-4), [70, 76, 79, 80]) || compare(flop.slice(-4), [65, 75, 74, 71])) {
 				soundClick();
-				$('#flop').modal('show');
-				// TODO: Таймер не работает
-				// setTimeout($('#flop').modal('hide'), 16000);
 			}
 			if (keyCode == 76) {
 				if (language == "both") {
