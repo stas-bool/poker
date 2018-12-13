@@ -24,11 +24,11 @@
 		<div class="row">
 			<div class="combination"></div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/royal-flush_shadow_min.svg") ?>
+				<img src="images/combinations/png/royal-flush_shadow_min.svg.png" class="hand">
 				<span class="ru">РОЯЛ СТРИТ ФЛЕШ</span><span class="bracket"> (</span><span class="en">ROYAL FLUSH<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/straight-flush_shadow_min.svg") ?>
+				<img src="images/combinations/png/straight-flush_shadow_min.svg.png" class="hand">
 				<span class="ru">СТРИТ ФЛЕШ</span><span class="bracket"> (</span><span class="en">STRAIGHT FLUSH<span class="bracket">)</span></span>
 			</div>
 			<div class="combination"></div>
@@ -36,38 +36,38 @@
 
 		<div class="row">
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/four-of-a-kind_shadow_min.svg") ?>
+				<img src="images/combinations/png/four-of-a-kind_shadow_min.svg.png" class="hand">
 				<span class="ru">КАРЕ</span><span class="bracket"> (</span><span class="en">FOUR OF A KAIND<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/full-house_shadow_min.svg") ?>
+				<img src="images/combinations/png/full-house_shadow_min.svg.png" class="hand">
 				<span class="ru">ФУЛЛ ХАУС</span><span class="bracket"> (</span><span class="en">FULL HOUSE<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/flush_shadow_min.svg") ?>
+				<img src="images/combinations/png/flush_shadow_min.svg.png" class="hand">
 				<span class="ru">ФЛЕШ</span><span class="bracket"> (</span><span class="en">ROYAL FLUSH<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/straight_shadow_min.svg") ?>
+				<img src="images/combinations/png/straight_shadow_min.svg.png" class="hand">
 				<span class="ru">СТРИТ</span><span class="bracket"> (</span><span class="en">STRAIGHT<span class="bracket">)</span></span>
 			</div>
 		</div><br>
 		
 		<div class="row">
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/three-of-a-kind_shadow_min.svg") ?>
+				<img src="images/combinations/png/three-of-a-kind_shadow_min.svg.png" class="hand">
 				<span class="ru">ТРОЙКА/СЕТ</span><span class="bracket"> (</span><span class="en">THREE OF A KIND<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/two-pairs_shadow_min.svg") ?>
+				<img src="images/combinations/png/two-pairs_shadow_min.svg.png" class="hand">
 				<span class="ru">ДВЕ ПАРЫ</span><span class="bracket"> (</span><span class="en">TWO PAIRS<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/one-pair_shadow_min.svg") ?>
+				<img src="images/combinations/png/one-pair_shadow_min.svg.png" class="hand">
 				<span class="ru">ПАРА</span><span class="bracket"> (</span><span class="en">PAIR<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<?= file_get_contents("images/combinations/with-shadows/min/high-hand_shadow_min.svg") ?>
+				<img src="images/combinations/png/high-hand_shadow_min.svg.png" class="hand">
 				<span class="ru">СТАРШАЯ КАРТА</span><span class="bracket"> (</span><span class="en">HIGH HAND<span class="bracket">)</span></span>
 			</div>
 		</div>
