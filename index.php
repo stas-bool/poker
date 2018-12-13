@@ -1,3 +1,6 @@
+<?php
+
+?>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -21,11 +24,11 @@
 		<div class="row">
 			<div class="combination"></div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/royal-flush_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/royal-flush_shadow_min.svg") ?>
 				<span class="ru">РОЯЛ СТРИТ ФЛЕШ</span><span class="bracket"> (</span><span class="en">ROYAL FLUSH<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/straight-flush_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/straight-flush_shadow_min.svg") ?>
 				<span class="ru">СТРИТ ФЛЕШ</span><span class="bracket"> (</span><span class="en">STRAIGHT FLUSH<span class="bracket">)</span></span>
 			</div>
 			<div class="combination"></div>
@@ -33,38 +36,38 @@
 
 		<div class="row">
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/four-of-a-kind_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/four-of-a-kind_shadow_min.svg") ?>
 				<span class="ru">КАРЕ</span><span class="bracket"> (</span><span class="en">FOUR OF A KAIND<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/full-house_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/full-house_shadow_min.svg") ?>
 				<span class="ru">ФУЛЛ ХАУС</span><span class="bracket"> (</span><span class="en">FULL HOUSE<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/flush_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/flush_shadow_min.svg") ?>
 				<span class="ru">ФЛЕШ</span><span class="bracket"> (</span><span class="en">ROYAL FLUSH<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/straight_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/straight_shadow_min.svg") ?>
 				<span class="ru">СТРИТ</span><span class="bracket"> (</span><span class="en">STRAIGHT<span class="bracket">)</span></span>
 			</div>
 		</div><br>
 		
 		<div class="row">
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/three-of-a-kind_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/three-of-a-kind_shadow_min.svg") ?>
 				<span class="ru">ТРОЙКА/СЕТ</span><span class="bracket"> (</span><span class="en">THREE OF A KIND<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/two-pairs_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/two-pairs_shadow_min.svg") ?>
 				<span class="ru">ДВЕ ПАРЫ</span><span class="bracket"> (</span><span class="en">TWO PAIRS<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/one-pair_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/one-pair_shadow_min.svg") ?>
 				<span class="ru">ПАРА</span><span class="bracket"> (</span><span class="en">PAIR<span class="bracket">)</span></span>
 			</div>
 			<div class="combination">
-				<object type="image/svg+xml" data="images/combinations/with-shadows/min/high-hand_shadow_min.svg"></object>
+				<?= file_get_contents("images/combinations/with-shadows/min/high-hand_shadow_min.svg") ?>
 				<span class="ru">СТАРШАЯ КАРТА</span><span class="bracket"> (</span><span class="en">HIGH HAND<span class="bracket">)</span></span>
 			</div>
 		</div>
@@ -111,12 +114,13 @@
 	  }, 16000);
 	}
 
-	function cardsFlopCounter() {
+	$('.card').click(function() {
 		cardClicks++;
 		if (cardClicks == 3) {
 			petrosyan();
+			cardClicks = 0;
 		}
-	}
+	})
 
 	$('#flop').on('hide.bs.modal', function () {
 	  audio.pause();

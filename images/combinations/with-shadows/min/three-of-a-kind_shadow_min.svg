@@ -96,7 +96,7 @@
        id="g83665"
        style="filter:url(#filter11094)">
       <g
-         id="g1692"
+         id="g1692" class="card"
          transform="matrix(0.28867587,-0.16666709,0.16666709,0.28867587,-1410.3556,-661.16937)">
         <rect
            style="fill:#ffffff;stroke:#000000"
@@ -2127,7 +2127,7 @@
         </g>
       </g>
       <g
-         id="g572"
+         id="g572" class="card"
          transform="matrix(0.32197613,-0.08627325,0.08627325,0.32197613,-1293.7342,-726.64403)">
         <rect
            style="fill:#ffffff;stroke:#000000"
@@ -3586,7 +3586,7 @@
         </g>
       </g>
       <g
-         id="g13574"
+         id="g13574" class="card"
          transform="matrix(0.33333334,0,0,0.33333334,-1168.2553,-758.87188)">
         <rect
            style="fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
@@ -5209,7 +5209,7 @@
            inkscape:connector-curvature="0" />
       </g>
       <g
-         id="g6"
+         id="g6" class="card"
          transform="matrix(0.32197613,0.08627325,-0.08627325,0.32197613,-1400.4811,-450.87165)">
         <rect
            style="fill:#ffffff;stroke:#000000"
@@ -5249,7 +5249,7 @@
            inkscape:connector-curvature="0" />
       </g>
       <g
-         id="g82399"
+         id="g82399" class="card"
          style="fill:#ff5555"
          transform="matrix(0.28867587,0.16666709,-0.16666709,0.28867587,-2091.3146,-514.32944)">
         <rect
