@@ -72,8 +72,8 @@
 			</div>
 		</div>
 	</div>
-	<div id="flop" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-	  <div class="modal-dialog modal-sm" role="document">
+	<div id="flop" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	    	<img id="petrosyan" src="images/petrosyan.gif">
 	    </div>
@@ -114,7 +114,7 @@
 	  }, 16000);
 	}
 
-	$('.card').click(function() {
+	$('.hand').click(function() {
 		cardClicks++;
 		if (cardClicks == 3) {
 			petrosyan();
