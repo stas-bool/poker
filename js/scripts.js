@@ -56,14 +56,6 @@
 			}
 		});
 
-		$('.hand').tap(function() {
-			cardClicks++;
-			if (cardClicks == 3) {
-				petrosyan();
-				cardClicks = 0;
-			}
-		});
-
 		$('span').click(function() {
 			switchLanguage();
 		});
