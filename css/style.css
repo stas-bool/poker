@@ -31,14 +31,22 @@ span {
 	width: 100%;
 }
 
-@media (max-width: 960px) {
-	span {
-		color: red;
+@media (orientation: portrait) {
+	.empty {
+		display: none;
+	}
+	.container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 	}
 }
 
-@media (min-width: 960px) {
-	span {
-		color: green;
+@media (orientation: landscape) {
+	.empty {
+		display: block;
+	}
+	.container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
 }
