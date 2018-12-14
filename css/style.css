@@ -1,40 +1,44 @@
 body {
 	background: url(../images/background.png) repeat;
 }
-
-.combination {
-	/*background: red;*/
-	height: 100%;
-	width: 24%;
-	text-align: center;
-}
-.wraper {
+.container {
 	font-family: 'Oswald', sans-serif;
 	text-shadow: 1px 1px 1px #aaa;
 	font-style: bold;
 	font-size: 22px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 }
-.row>div {
-	display: inline-block;
-}
-.row {
-	height: 30%;
-}
-svg {
-	width: 100%;
-	height: 90%;
+.empty {
+	display: block;
 }
 
+.combination {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom:15px;
+}
 span {
 	color: white;
 }
 .hand {
-	width: 104%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	/*width: 50%;*/
-	/*height: 100%;*/
 }
 #petrosyan {
 	width: 100%;
+}
+
+@media (max-width: 960px) {
+	span {
+		color: red;
+	}
+}
+
+@media (min-width: 960px) {
+	span {
+		color: green;
+	}
 }
