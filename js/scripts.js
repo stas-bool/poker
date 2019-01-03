@@ -40,7 +40,7 @@
 			return a1.length == a2.length && a1.every((v,i)=>v === a2[i])
 		};
 		const petrosyan = () => {
-			return;
+			//return;
 			audio.src = '22.mp3';
 			$('#flop').modal('show');
 			audio.play();
