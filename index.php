@@ -9,11 +9,10 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script
-	    src="https://code.jquery.com/jquery-3.3.1.slim.js"
-	    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-	    crossorigin="anonymous">
-	</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 

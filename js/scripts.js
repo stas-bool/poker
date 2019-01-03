@@ -76,4 +76,11 @@
 				switchLanguage();
 			}
 		});
+		var jokeTimer = setInterval(function () {
+			$.get("indicator.php", function(data) {
+				if (data == "1") {
+					petrosyan();
+				}
+			});
+		}, 1000);
 	});

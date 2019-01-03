@@ -2,7 +2,8 @@
 
 $indicatorFile = '/tmp/indicator.tmp';
 if (!file_exists($indicatorFile)) {
-	return 0;
+	echo 0;
 } else {
-	return 1;
+	unlink($indicatorFile);
+	echo 1;
 }
